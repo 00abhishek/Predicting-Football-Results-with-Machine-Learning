@@ -7,6 +7,7 @@ description: >-
 # World Map Plotting
 
 ```r
+#First install Maps package
 install.packages("maps")
 ```
 
