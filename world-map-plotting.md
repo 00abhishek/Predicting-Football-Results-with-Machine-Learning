@@ -1,7 +1,8 @@
 ---
 description: >-
   Here we will build a plot of world map on which we mark different countries
-  based on the number of patients they contain.
+  based on the number of patients they contain. Follow the code given below in a
+  stepwise manner.
 ---
 
 # World Map Plotting
