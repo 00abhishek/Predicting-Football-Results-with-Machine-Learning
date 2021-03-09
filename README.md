@@ -50,7 +50,9 @@ p + facet_wrap(~continent) +
 ![](.gitbook/assets/a2.gif)
 
 ```text
-
+p + transition_time(year) +
+  labs(title = "Year: {frame_time}") +
+  shadow_wake(wake_length = 0.1, alpha = FALSE)
 ```
 
 ![](.gitbook/assets/a4.gif)
@@ -58,18 +60,10 @@ p + facet_wrap(~continent) +
 ```text
 p + transition_time(year) +
   labs(title = "Year: {frame_time}") +
-  shadow_wake(wake_length = 0.1, alpha = FALSE)
-```
-
-![](.gitbook/assets/e1.gif)
-
-```text
-p + transition_time(year) +
-  labs(title = "Year: {frame_time}") +
   shadow_mark(alpha = 0.3, size = 0.5)
 ```
 
-![](.gitbook/assets/e2.gif)
+![](.gitbook/assets/e1.gif)
 
 ```text
 p <- ggplot(
@@ -85,7 +79,7 @@ p
 p + transition_reveal(Day)
 ```
 
-![](.gitbook/assets/a6.gif)
+![](.gitbook/assets/e2.gif)
 
 ```text
 p + 
@@ -93,12 +87,15 @@ p +
   transition_reveal(Day)
 ```
 
-![](.gitbook/assets/a7.gif)
+![](.gitbook/assets/a6.gif)
 
 ```text
 p + 
   geom_point(aes(group = seq_along(Day))) +
   transition_reveal(Day)
-
 ```
+
+![](.gitbook/assets/a7.gif)
+
+
 
